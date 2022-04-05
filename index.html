@@ -1,0 +1,55 @@
+<html>
+    <head>
+    <title>Busca de CEP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+      <form >
+        <div class="outer-wrap">
+            <div class="page-wrap">
+              <header class="page-header">
+                <h1>Informe seu CEP <p>use o scroll--></p></h1>
+                
+            </header>
+            <div class="page-main">
+                <article>
+                    
+                    <p><label>Cep:</p>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" /></label><br />
+                    
+                    <p> <label>Rua:</p>
+                        <input name="rua" type="text" id="rua" size="60" /></label><br />
+                    
+                    <p><label>Bairro:</p>
+                        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+
+                    <p><label>Cidade:</p>
+                        <input name="cidade" type="text" id="cidade" size="40" /></label><br/>
+                
+                    <p><label>Estado:</p>
+                        <input name="uf" type="text" id="uf" size="2" /></label><br/>
+                
+                    <p><label>IBGE:</p>
+                        <input name="ibge" type="text" id="ibge" size="8" /></label><br/>
+                  </article>
+                </div>
+                <footer class="page-footer">
+        
+            </footer>
+            </div>
+            </div>
+      </form>
+      <!-- Adicionando JQuery -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+
+	</body>
+    <script src="javascript/busca.js"></script>
+    <script src="javascript/gradi.js"></script>
+</html>      

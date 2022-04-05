@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ededed;
+  text-transform: uppercase;
+  font-weight: 100;
+  opacity: 0.75;
+  letter-spacing: 15px;
+  font-size: 5rem;
+  mix-blend-mode: screen;
+  font-family: "Dela Gothic One", cursive;
+}
+p {
+  font-family: "Lato", Arial, Helvetica;
+  letter-spacing: 2px;
+  font-size: 16px;
+  max-width: 50%;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.outer-wrap {
+  width: 100vh;
+  height: 100vw;
+  transform: rotate(-90deg) translateX(-100vh);
+  transform-origin: top left;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.page-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 175vw;
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  
+}
+.page-header {
+  width: 150vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/lago.jpg");
+  background-size: cover;
+  background-position: 0% 75%;
+}
+
+.page-main {
+  width: 100vw;
+  height: calc(100vh - 25px);
+  overflow-y: auto;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: #ededed;
+  background: linear-gradient(130deg,#d8f3dc,#52b788 41.07%,#2d6a4f 76.05%);
+
+}
+input{
+display: block;
+border-radius: 5px;
+font-size: 20px;
+background: white;
+width: 50%;
+border: 0;
+padding: 10px 10px;
+}
+article {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 33px;
+    text-align: center;
+  }
+  .outer-wrap {
+    width: 100vw;
+    height: 100vh;
+    transform: rotate(0deg) translateX(0vh);
+  }
+  .page-header {
+    width: 100vw;
+  }
+  .page-wrap {
+    width: 100vw;
+    display: block;
+    transform: rotate(0deg) translateY(0vh);
+  }
+  .page-main {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+  }
+
+  article {
+    width: 100%;
+    padding: 25px;
+  }
+}
